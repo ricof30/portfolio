@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Belanosima:wght@600&family=Dosis:wght@200;300&family=Fjalla+One&family=Kanit:wght@300&family=Oswald:wght@300&family=Outfit:wght@200&family=Poppins:wght@300&family=Rowdies:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+    scroll-behavior: smooth;
+}
+.container{
+  position: absolute;
+  width: 100%;
+}
+
+/* home page */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.circle{
+    position: absolute;
+    width:55%;
+    height: 100vh;
+    border-bottom-left-radius: 100%;
+    background-image: url(Metallic\ Toad.jpg);
+    right: 0;
+}
+nav{
+    width: 100%;
+    height:60px;
+    /* background-color: white; */
+    display: flex;
+    justify-content:center;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    position:absolute;
+    z-index: 1;
+}
+.navlist li{
+    width: 100px;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.navlist{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navlist a{
+    color:#202020;
+    font-family:Kanit;
+    font-size: 17px;
+    font-weight: 250;
+    margin: 0 25px;
+    transition: all .45s ease;
+    text-decoration: none;
+}
+.navlist a:hover{
+    color:skyblue;
+    text-decoration: underline;
+}
+.logo{
+    position: absolute;
+    display: flex;
+    justify-content:start;
+    left: 3%;
+    top: 14%;
+}
+.logo_name h3{
+    font-family:Poppins;
+    font-size:20px;
+    align-self: center;
+}
+.logo img{
+    width: 50px;
+    height: 40px;
+    margin-top: 0px;   
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+.name{
+    position: relative;
+    top: 30%;
+    left: 8%;
+    width: 50%;
+    height: 100px;
+}
+.name h2{
+  font-weight: 100;
+  font-family: Poppins;
+  font-size: 30px;
+}
+.name h1{
+    font-weight: 100;
+    font-family: "Fjalla One";
+    font-size: 80px;
+  }
+  .name p {
+    margin-top: 10px;
+    width: 90%;
+    font-family: Poppins;
+    text-align:justify ;
+  }
+  .dynamic-txt li{
+    list-style-type: none;
+    color: skyblue;
+    font-family: "Fjalla One" ;
+    font-size:70px;
+  
+    animation: slide 6s steps(3) infinite;
+    position: relative;
+    top: 0;
+  }
+
+  .dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+  }
+  
+  @keyframes slide{
+    100%{
+      top: -245px;}
+  }
+  .dynamic-txt{
+    height: 80px;
+    line-height: 80px;
+    overflow: hidden;
+  }
+  .dynamic-txt li span{
+    position: relative;
+  }
+  .title1,.title2,.title3,.title4{
+    text-align: center;
+    font-family: Belanosima;
+    font-size: 3rem;
+  }
+   /* about section */
+   .about{
+    background-image: url(bg1.jpg);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .about span{
+    color: skyblue;
+  }
+  .title1{
+    width: max-content;
+    position: relative;
+    top: 90px;
+    left: 37%;
+    color: white;
+  }
+  .about img{
+    position: relative;
+    left: 10%;
+    top: 10%;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: clamp(300px, 50%, 350px);
+    height: clamp(10px, 50% 350px);
+  }
+  .my-info{
+    width: 55%;
+    height: 300px;
+    position: absolute;
+    top: 23%;
+    left: 37%;
+  }
+  .my-info p{
+    font-family: Poppins;
+    color: white;
+    text-align: justify;
+  }
+ 
+
+  /* services section */
+  .services{
+    position: relative;
+    /* background-color: white; */
+    background-image: url(Portrait.jpg);
+    width: 100%;
+    height: 100vh;
+  }
+  .my-services{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .my-service1, .my-service2, .my-service3{
+    margin-top: 50px;
+    width: 25%;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .my-service1 img, .my-service2 img, .my-service3 img{
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    margin-left:40%;
+    margin-top: 20px;
+  }
+  .my-service1 p, .my-service2 p, .my-service3 p{
+    /* border: 1px solid black; */
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+    font-family: Poppins;
+  }
+  .my-service1 h2, .my-service2 h2, .my-service3 h2{
+    font-family: "Fjalla One";
+    text-align: center;
+    color: skyblue;
+    margin-bottom: 10px;
+  }
+  .services span{
+    color: skyblue;
+  }
+  .title2{
+    color: gray;
+    position: relative;
+    top: 30px;
+  }
+
+  /* projects section */
+  .title3 span{
+    color: skyblue;
+  }
+  .projects{
+    background-color:lightgray;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  /* contact section */
+  .title4 span{
+    color: skyblue;
+  }
+  .contact{
+    background-color:white;
+    width: 100%;
+    height: 100vh;
+  }
+  .social-media{
+    position: relative;
+    left: 18%;
+    width:clamp(60%, 50%, 50%);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    top: 22%;
+    
+  }
+  .contact img{
+    position: relative;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-right: 20px;
+  }
+
+  .message{
+    position: relative;
+    float: left;
+    width:50%;
+    height: 100vh;
+    /* background-color: aqua; */
+  }
+  .message h2{
+    position: relative;
+    width: max-content;
+    top: 10%;
+    left: 18%;
+    font-family: Kanit;
+    font-size: clamp (20px, 50%, 40px);
+
+  }
+  .message h3{
+    position: relative;
+    left: 18%;
+    top: 20%;
+    width: max-content;
+    font-family: Kanit;
+  }
+  .message p{
+    position: relative;
+    width: clamp(80%, 50%, 60%);
+    left: 18%;
+    top: 12%;
+    font-family: Outfit;
+    font-weight: 600;
+  }
+  
+  #number{
+    position: relative;
+    left: 18%;
+    top: 13%;
+    width: max-content;
+  }
+  #email{
+    width: max-content;
+    position: relative;
+    left: 18%;
+    top: 14%;
+  }
+ 
+  .form{
+    position: relative;
+    float: right;
+    width:50%;
+    height: 100vh;
+  }
+  
+    /* background-color: green; */
+  
+  input[type="text"]{
+    position: absolute;
+    font-family: Poppins;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 50px;
+    display: block;
+    border-radius: 5px;
+   
+  }
+  input[type="email"]{
+    font-family: Poppins;
+    position: absolute;
+    top: 33%;
+    left: 10%;
+    width: 80%;
+    height: 50px;
+    display: block;
+    border-radius: 5px;
+
+  }
+  input[type="submit"]{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-weight: 600;
+    background-color: skyblue;
+  }
+  textarea{
+    position: absolute;
+    font-family: Poppins;
+    top: 46%;
+    left: 10%;
+    width: 80%;
+    height: 100px;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .form h2{
+    position: relative;
+    top: 10%;
+    left: 35%;
+    font-family: Belanosima;
+    font-size: 35px;
+    width: max-content;
+    color: gray;
+  }
+   /* footer section */
+  footer{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+  }
+  footer h5{
+    text-align: center;
+    align-self: center;
+    font-family: Poppins;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  footer img{
+    position: absolute;
+    top: 10px;
+    margin-left: 95%;
+    width: 30px;
+    height: 30px;
+  } 
+@media (max-width: 460px){
+    .home{
+        width: 100%;
+        height: 70vh;
+       
+    }
+    #menu-icon{
+        display:block;
+    }
+    .dynamic-txt{
+        height: 50px;
+        line-height: 50px;
+      }
+      @keyframes slide{
+        100%{
+          top: -150px;
+        }
+    
+      }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        transition: all .45s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 5px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color:black;
+        width: 80px;
+        text-align: left;
+    }
+    .navlist li{
+        width: 100%;
+        /* border-bottom: 1px solid black; */
+    }
+    .navlist.open{
+        top: 100%;
+    }
+    .circle{
+        width: 100%;
+        height: 70vh;
+    }
+    .bx img{
+        position:absolute;
+        margin-right: 10px;
+        right: 0;
+        top: 15px;
+    }
+    .name{
+        position: relative;
+        left: 5%;
+        top: 15%;
+        width: 90%;
+    }
+    .name h2{
+        font-weight: 100;
+        font-family: Poppins;
+        font-size: 20px;
+      }
+      .name h1{
+          font-weight: 100;
+          font-family: "Fjalla One";
+          font-size: 40px;
+        }
+        .name p{
+            width: 80%;
+            font-size: 12px;
+        }
+        .dynamic-txt li{
+            font-size: 40px;
+        }
+
+        /* about section */
+        .about{
+          height: 130vh;
+        }
+       .title1{
+        top: 2%;
+        left: 20%;
+       }
+       .about img{
+        /* position: relative; */
+        top: 2%;
+        width: 250px;
+        left: 20%;
+       }
+       .my-info{
+        /* position: absolute; */
+        height: 50vh;
+        margin-top: 60%;
+        left: 0;
+        top: 13%; 
+        /* background-color: aqua; */
+         width: 90%; 
+        margin-left:5% ;
+       }
+       .my-info p{
+        height: 50vh;
+        width:100%;
+        position: relative;
+        font-size: 14px;
+        /* background: blue; */
+       }
+       .services{
+        height: 200vh;
+       }
+       .my-services{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-top: 350px;
+
+       }
+       .my-service1, .my-service2, .my-service3{
+       margin-left: 10%;
+        width: 100%;
+        height: 400px;
+       }
+       /* contact section */
+       .contact{
+        height: 150vh;
+       }
+       .form{
+        position: absolute;
+        height: 90vh;
+        top: 86%;
+       }
+       .message{
+        height: 70vh;
+       }
+       .message h2{
+        left: 20%;
+       }
+       .message h3{
+        left: 20%;
+       }
+       .message p{
+        left: 10%;
+        margin-bottom: 10px;
+       }
+       #number{
+        left: 20%;
+       }
+       #email{
+        left: 20%;
+       }
+       .social-media{
+        left: 20%;
+       }
+       footer{
+        bottom: 0;
+       }
+       .form h2{
+        left: 25%;
+       }
+       footer img{
+        right:5px ;
+       }
+}
+
+
